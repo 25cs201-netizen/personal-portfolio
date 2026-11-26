@@ -1,0 +1,175 @@
+
+/* General Settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #00bcd4;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #222;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #007b9e;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+main a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Button */
+button {
+    background-color: #222;
+    color: white;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+button:focus {
+    background-color: #007bff;
+}
+
+/* Success Message */
+#successMessage {
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
